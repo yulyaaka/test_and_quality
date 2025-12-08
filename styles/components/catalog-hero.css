@@ -1,0 +1,15 @@
+.catalog-hero {
+  padding: 100px 0 60px;
+  background: var(--color-main);
+  text-align: center;
+}
+
+.catalog-hero__title {
+  font-size: clamp(40px, 7vw, 64px);
+  margin-bottom: 16px;
+}
+
+.catalog-hero__text {
+  font-size: 20px;
+  opacity: 0.9;
+}
