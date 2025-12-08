@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа — Глина и Душа</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo header__logo">
+        <img src="img/logo.png" alt="Глина и Душа" class="logo__img">
+        <span class="logo__text">Глина и Душа</span>
+      </a>
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+          <li><a href="about.html" class="nav__link">О мастере</a></li>
+          <li><a href="delivery.html" class="nav__link">Доставка</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="cart.html" class="cart-link header__cart">
+        <span class="cart-link__icon">Корзина</span>
+        <span class="cart-link__count" id="cartCountHeader">0</span>
+      </a>
+
+      <button class="burger header__burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+        <li><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+        <li><a href="about.html" class="mobile-menu__link">О мастере</a></li>
+        <li><a href="delivery.html" class="mobile-menu__link">Доставка</a></li>
+        <li><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="checkout">
+      <div class="container checkout__container">
+        <h1 class="checkout__title">Оформление заказа</h1>
+
+        <div class="checkout__wrapper">
+          <form class="checkout__form" id="checkoutForm">
+            <div class="checkout__block">
+              <h2>Контактные данные</h2>
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="tel" name="phone" placeholder="Телефон" required>
+              <input type="email" name="email" placeholder="E-mail (необязательно)">
+            </div>
+
+            <div class="checkout__block">
+              <h2>Доставка</h2>
+              <label><input type="radio" name="delivery" value="pickup" checked> Самовывоз — г. Йошкар-Ола, ул. Машиностроителей, 15</label>
+              <label><input type="radio" name="delivery" value="courier"> Курьер по г. Йошкар-Ола — 300 ₽</label>
+              <label><input type="radio" name="delivery" value="russia"> Почта России / СДЭК по РФ — от 400 ₽</label>
+              <input type="text" name="address" placeholder="Адрес доставки (для курьера и СДЭК)" required>
+            </div>
+
+            <div class="checkout__block">
+              <h2>Комментарий к заказу</h2>
+              <textarea name="comment" rows="4" placeholder="Пожелания, дата доставки и т.д."></textarea>
+            </div>
+
+            <div class="checkout__total">
+              <span>К оплате:</span>
+              <span id="checkoutTotal">0 ₽</span>
+            </div>
+
+            <button type="submit" class="btn checkout__submit">Отправить заказ в Telegram</button>
+          </form>
+
+          <div class="checkout__summary" id="checkoutSummary">
+            <h2>Ваш заказ</h2>
+            <div class="checkout__items" id="checkoutItems"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left">
+        <a href="index.html" class="logo footer__logo">
+          <span class="logo__text">Глина и Душа</span>
+        </a>
+        <p class="footer__copyright">© 2025 Все права защищены</p>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О мастере</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts">
+        <a href="https://instagram.com" class="footer__social">Instagram</a>
+        <a href="tel:+79991234567" class="footer__phone">+7 (999) 123-45-67</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
