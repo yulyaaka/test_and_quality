@@ -1,0 +1,4 @@
+import './components/burger.js';
+import './components/gallery.js';
+import './components/cart.js';
+import './components/checkout.js';
