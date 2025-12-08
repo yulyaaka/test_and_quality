@@ -1,10 +1,11 @@
+<!DOCTYPE html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Глина и Душа — керамика ручной работы</title>
-  <meta name="description" content="Керамика ручной работы с душой. Чайные пары, вазы, тарелки и декоративные изделия">
+  <title>Каталог — Глина и Душа</title>
+  <meta name="description" content="Керамика ручной работы: чаши, вазы, чайные пары, тарелки и декоративные изделия">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +24,8 @@
 
       <nav class="nav header__nav">
         <ul class="nav__list">
-          <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
-          <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="catalog.html" class="nav__link nav__link--active">Каталог</a></li>
           <li><a href="about.html" class="nav__link">О мастере</a></li>
           <li><a href="delivery.html" class="nav__link">Доставка</a></li>
           <li><a href="contacts.html" class="nav__link">Контакты</a></li>
@@ -58,48 +59,45 @@
   </div>
 
   <main class="main">
-    <section class="hero">
-      <div class="container hero__container">
-        <h1 class="hero__title">Керамика,<br>в которой живёт душа</h1>
-        <p class="hero__text">Каждая вещь создана вручную с любовью и теплом</p>
-        <a href="catalog.html" class="btn hero__btn">Смотреть каталог</a>
+    <section class="catalog-hero">
+      <div class="container catalog-hero__container">
+        <h1 class="catalog-hero__title">Каталог</h1>
+        <p class="catalog-hero__text">Каждая вещь уникальна и создана вручную</p>
       </div>
     </section>
 
-    <section class="benefits">
-      <div class="container benefits__container">
-        <h2 class="benefits__title">Место, где вы сможете</h2>
+    <section class="catalog">
+      <div class="container catalog__container">
+        <div class="catalog__grid">
+          
+          <article class="product-card" data-id="1">
+            <a href="product-1.html" class="product-card__link">
+              <img src="img/teacup.png" alt="Чайная пара «Терракота»" class="product-card__img">
+              <h3 class="product-card__title">Чайная пара «Терракота»</h3>
+              <p class="product-card__price">4 800 ₽</p>
+            </a>
+            <button class="product-card__btn btn" data-add-to-cart="1">В корзину</button>
+          </article>
 
-        <div class="benefits__grid">
-          <div class="benefits__card">
-            <div class="benefits__icon">
-              <img src="img/hand.png" alt="Отдохнуть">
-            </div>
-            <h3 class="benefits__card-title">Отдохнуть</h3>
-            <p class="benefits__text">
-              От повседневной суеты и новостей внешнего мира. Расслабиться и получить прекрасные эмоции от работы с глиной
-            </p>
-          </div>
+          <article class="product-card" data-id="2">
+            <a href="product-2.html" class="product-card__link">
+              <img src="img/moonlight.png" alt="Ваза «Лунный свет»" class="product-card__img">
+              <h3 class="product-card__title">Ваза «Лунный свет»</h3>
+              <p class="product-card__price">7 200 ₽</p>
+            </a>
+            <button class="product-card__btn btn" data-add-to-cart="2">В корзину</button>
+          </article>
 
-          <div class="benefits__card">
-            <div class="benefits__icon">
-              <img src="img/heart-hands.png" alt="Погрузиться">
-            </div>
-            <h3 class="benefits__card-title">Погрузиться</h3>
-            <p class="benefits__text">
-              В свой внутренний мир, атмосферу творчества, замедлиться, отключить поток мыслей и отпустить на волю движения рук
-            </p>
-          </div>
+          <article class="product-card" data-id="3">
+            <a href="product-3.html" class="product-card__link">
+              <img src="img/plates.png" alt="Набор тарелок «Песок»" class="product-card__img">
+              <h3 class="product-card__title">Набор тарелок «Песок» (4 шт)</h3>
+              <p class="product-card__price">9 600 ₽</p>
+            </a>
+            <button class="product-card__btn btn" data-add-to-cart="3">В корзину</button>
+          </article>
 
-          <div class="benefits__card">
-            <div class="benefits__icon">
-              <img src="img/pottery.png" alt="Создать">
-            </div>
-            <h3 class="benefits__card-title">Создать</h3>
-            <p class="benefits__text">
-              Свое «неидеальное» (или идеальное — как решите) ручное изделие, которое будет обладать уникальной — «вашей» — энергетикой!
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -124,12 +122,12 @@
       </nav>
 
       <div class="footer__contacts">
-        <a href="https://instagram.com" class="footer__social">Telegram</a>
+        <a href="https://instagram.com" class="footer__social">Instagram</a>
         <a href="tel:+79991234567" class="footer__phone">+7 (999) 123-45-67</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
