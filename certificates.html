@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подарочные сертификаты — Глина и Душа</title>
+  <meta name="description" content="Подарочные сертификаты на мастер-классы по керамике ручной работы. Идеальный подарок для творческих людей">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/delivery.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo header__logo">
+        <img src="images/logo.png" alt="Глина и Душа" class="logo__img">
+        <span class="logo__text">Глина и Душа</span>
+      </a>
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+          <li><a href="about.html" class="nav__link">Мастера</a></li>
+          <li><a href="delivery.html" class="nav__link">Доставка</a></li>
+          <li><a href="certificates.html" class="nav__link nav__link--active">Сертификаты</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="cart.html" class="cart-link header__cart">
+        <span class="cart-link__icon">Корзина</span>
+        <span class="cart-link__count" id="cartCountHeader">0</span>
+      </a>
+
+      <button class="burger header__burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+        <li><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+        <li><a href="about.html" class="mobile-menu__link">Мастера</a></li>
+        <li><a href="certificates.html" class="mobile-menu__link mobile-menu__link--active">Сертификаты</a></li>
+        <li><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="certificates">
+      <div class="container certificates__container">
+        <h1 class="certificates__title">Подарочные сертификаты</h1>
+        <p class="certificates__subtitle">Подарите эмоции и творчество — выберите идеальный подарок для близких</p>
+
+        <div class="certificates__grid">
+          <!-- Сертификат 1 -->
+          <div class="certificate-card">
+            <div class="certificate-card__image">
+              <div class="certificate-card__badge">Популярный</div>
+              <img src="images/cert_1.jpg" alt="Сертификат на базовый мастер-класс">
+            </div>
+            <div class="certificate-card__content">
+              <h3 class="certificate-card__title">Базовый мастер-класс</h3>
+              <p class="certificate-card__description">
+                Создание одной керамической чашки или тарелки. Знакомство с гончарным кругом, лепка, декорирование.
+              </p>
+              <ul class="certificate-card__features">
+                <li>Длительность: 2 часа</li>
+                <li>Все материалы включены</li>
+                <li>Обжиг готового изделия</li>
+                <li>Работа с мастером индивидуально</li>
+              </ul>
+              <div class="certificate-card__price">4 500 ₽</div>
+              <button class="btn certificate-card__btn" data-certificate="basic">Выбрать этот сертификат</button>
+            </div>
+          </div>
+
+          <!-- Сертификат 2 -->
+          <div class="certificate-card">
+            <div class="certificate-card__image">
+              <img src="images/cert_2.jpg" alt="Сертификат на продвинутый мастер-класс">
+            </div>
+            <div class="certificate-card__content">
+              <h3 class="certificate-card__title">Продвинутый мастер-класс</h3>
+              <p class="certificate-card__description">
+                Создание набора из двух предметов (чашка + блюдце или пара тарелок). Работа со сложными формами.
+              </p>
+              <ul class="certificate-card__features">
+                <li>Длительность: 3 часа</li>
+                <li>Расширенный набор материалов</li>
+                <li>Двойной обжиг с глазурью</li>
+                <li>Индивидуальная работа с мастером</li>
+              </ul>
+              <div class="certificate-card__price">7 900 ₽</div>
+              <button class="btn certificate-card__btn" data-certificate="pro">Выбрать этот сертификат</button>
+            </div>
+          </div>
+
+          <!-- Сертификат 3 -->
+          <div class="certificate-card certificate-card--featured">
+            <div class="certificate-card__image">
+              <div class="certificate-card__badge certificate-card__badge--featured">Лучший выбор</div>
+              <img src="images/cert_3.jpg" alt="Сертификат для двоих">
+            </div>
+            <div class="certificate-card__content">
+              <h3 class="certificate-card__title">Мастер-класс для двоих</h3>
+              <p class="certificate-card__description">
+                Романтическое или дружеское свидание за гончарным кругом. Создание парных изделий.
+              </p>
+              <ul class="certificate-card__features">
+                <li>Длительность: 2,5 часа</li>
+                <li>Два рабочих места</li>
+                <li>Фотосессия процесса</li>
+                <li>Чайная церемония с дегустацией</li>
+                <li>Подарочная упаковка</li>
+              </ul>
+              <div class="certificate-card__price">9 500 ₽</div>
+              <button class="btn certificate-card__btn certificate-card__btn--featured" data-certificate="couple">Выбрать этот сертификат</button>
+            </div>
+          </div>
+
+          <!-- Сертификат 4 -->
+          <div class="certificate-card">
+            <div class="certificate-card__image">
+              <img src="images/cert_4.jpg" alt="Сертификат на произвольную сумму">
+            </div>
+            <div class="certificate-card__content">
+              <h3 class="certificate-card__title">Сертификат на сумму</h3>
+              <p class="certificate-card__description">
+                Подарок на любую сумму от 2 000 ₽. Получатель сам выберет мастер-класс или готовое изделие.
+              </p>
+              <ul class="certificate-card__features">
+                <li>Срок действия: 6 месяцев</li>
+                <li>Можно использовать частями</li>
+                <li>Действует на все услуги и товары</li>
+                <li>Электронный или печатный вариант</li>
+              </ul>
+              <div class="certificate-card__price">от 2 000 ₽</div>
+              <button class="btn certificate-card__btn" data-certificate="custom">Выбрать сумму</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificates__info">
+          <div class="certificates__info-item">
+            <h3>Как это работает</h3>
+            <ol class="certificates__steps">
+              <li>Выберите сертификат или укажите желаемую сумму</li>
+              <li>Оформите заказ и оплатите онлайн</li>
+              <li>Получите электронный сертификат сразу после оплаты</li>
+              <li>Печатный вариант можно забрать в мастерской или получить с доставкой</li>
+              <li>Получатель записывается на удобную дату по телефону или в мессенджере</li>
+            </ol>
+          </div>
+
+          <div class="certificates__info-item">
+            <h3>Важная информация</h3>
+            <ul class="certificates__details">
+              <li>Сертификат действителен в течение 6 месяцев с момента покупки</li>
+              <li>Предварительная запись обязательна за 3-7 дней</li>
+              <li>Перенос бронирования возможен за 24 часа до мастер-класса</li>
+              <li>Фото и видео процесса разрешены и приветствуются</li>
+              <li>Готовые изделия можно забрать через 10-14 дней после мастер-класса</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="certificates__custom">
+          <h2>Сертификат на свою сумму</h2>
+          <div class="certificates__custom-form">
+            <div class="certificates__custom-input">
+              <label for="customAmount">Введите сумму сертификата (от 2 000 ₽)</label>
+              <input type="number" id="customAmount" min="2000" max="50000" step="500" value="5000" placeholder="5000">
+              <span class="certificates__currency">₽</span>
+            </div>
+            <button class="btn certificates__custom-btn" id="customCertificateBtn">Оформить сертификат</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Модальное окно выбора сертификата -->
+    <div class="modal" id="certificateModal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Закрыть">&times;</button>
+        <h2 class="modal__title">Оформление сертификата</h2>
+        <form class="modal__form" id="certificateForm">
+          <input type="hidden" name="certificateType" id="certificateType">
+          <input type="hidden" name="certificateAmount" id="certificateAmount">
+          
+          <div class="modal__form-group">
+            <label for="recipientName">Имя получателя *</label>
+            <input type="text" id="recipientName" name="recipientName" required placeholder="На чьё имя сертификат">
+          </div>
+
+          <div class="modal__form-group">
+            <label for="senderName">Ваше имя *</label>
+            <input type="text" id="senderName" name="senderName" required placeholder="Кто дарит">
+          </div>
+
+          <div class="modal__form-group">
+            <label for="senderEmail">Ваш email *</label>
+            <input type="email" id="senderEmail" name="senderEmail" required placeholder="Для отправки сертификата">
+          </div>
+
+          <div class="modal__form-group">
+            <label for="senderPhone">Ваш телефон *</label>
+            <input type="tel" id="senderPhone" name="senderPhone" required placeholder="Для связи">
+          </div>
+
+          <div class="modal__form-group">
+            <label for="certificateMessage">Поздравительное сообщение (необязательно)</label>
+            <textarea id="certificateMessage" name="certificateMessage" rows="3" placeholder="Напишите тёплые слова получателю"></textarea>
+          </div>
+
+          <div class="modal__form-group">
+            <label for="deliveryType">Формат сертификата</label>
+            <select id="deliveryType" name="deliveryType">
+              <option value="electronic">Электронный (отправляем на email)</option>
+              <option value="printed">Печатный (забрать в мастерской)</option>
+              <option value="delivery">С доставкой (+500 ₽ к стоимости)</option>
+            </select>
+          </div>
+          <!-- В модальном окне добавьте эти поля -->
+<div class="modal__form-group" style="display: none;">
+  <input type="hidden" name="certificateType" id="certificateType">
+  <input type="hidden" name="certificateAmount" id="certificateAmount">
+</div>
+
+          <div class="modal__summary">
+            <div class="modal__summary-item">
+              <span>Сертификат:</span>
+              <span id="modalCertificateTitle">Базовый мастер-класс</span>
+            </div>
+            <div class="modal__summary-item">
+              <span>Стоимость:</span>
+              <span id="modalCertificatePrice">4 500 ₽</span>
+            </div>
+            <div class="modal__summary-item modal__summary-item--total">
+              <span>Итого:</span>
+              <span id="modalCertificateTotal">4 500 ₽</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn modal__submit">Перейти к оплате</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left">
+        <a href="index.html" class="logo footer__logo">
+          <span class="logo__text">Глина и Душа</span>
+        </a>
+        <p class="footer__copyright">© 2025 Все права защищены</p>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О мастере</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="certificates.html">Сертификаты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts">
+        <a href="https://t.me/lilac_n" class="footer__social">Telegram</a>
+        <a href="tel:+79991234567" class="footer__phone">+7 (999) 123-45-67</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/delivery.js"></script>
+</body>
+</html>
