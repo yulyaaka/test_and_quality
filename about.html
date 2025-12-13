@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О мастере — Глина и Душа</title>
+  <meta name="description" content="История мастера, философия работы с глиной и почему каждая вещь несёт тепло рук">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo header__logo">
+        <img src="images/logo.png" alt="Глина и Душа" class="logo__img">
+        <span class="logo__text">Глина и Душа</span>
+      </a>
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+          <li><a href="about.html" class="nav__link nav__link--active">О мастере</a></li>
+          <li><a href="delivery.html" class="nav__link">Доставка</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="cart.html" class="cart-link header__cart">
+        <span class="cart-link__icon">Корзина</span>
+        <span class="cart-link__count">0</span>
+      </a>
+
+      <button class="burger header__burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="mobile-menu__link">Главная</li>
+        <li><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+        <li><a href="about.html" class="mobile-menu__link">Маастера</a></li>
+        <li><a href="delivery.html" class="mobile-menu__link">Сертификаты</a></li>
+        <li><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title">Мастер Юлия</h2>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              Меня зовут Юлия, и уже больше 10 лет глина — мой верный спутник и источник вдохновения. Всё началось случайно: подруга пригласила на открытый урок в керамической студии, и я, не ожидая ничего особенного, села за гончарный круг. Первая ваза вышла кривоватой, но в тот момент я почувствовала, как глина отвечает на прикосновения рук, словно живая.            </p>
+            <p>
+              С тех пор я погрузилась в этот мир с головой: училась у старых мастеров, экспериментировала с текстурами, глазурями и формами, обжигала сотни изделий. Главное открытие для меня — керамика учит гармонии. Нет смысла торопить процесс: глина требует терпения, внимания и полного присутствия в моменте.
+            </p>
+            <p>
+              Каждое изделие рождается в тишине мастерской: от мягкого комка до финальной глазури проходит несколько недель сушки, обжигов и шлифовки. В этот процесс я вкладываю не только руки, но и своё настроение, мысли, энергию природы — часто вдохновляюсь лесом и морем. Поэтому мои вазы, подсвечники и декоративные фигуры несут в себе спокойствие и естественную красоту.
+            </p>
+            <p>
+              Я использую только экологичные материалы, натуральные пигменты и пищевые глазури. Всё безопасно для повседневного использования — можно ставить в духовку, мыть в посудомойке и просто наслаждаться тем, как вещь, созданная вручную, становится частью вашего дома.
+            </p>
+            <p class="about__signature">
+              — Юлия, ваша проводница в мир природной керамики
+            </p>
+          </div>
+
+          <div class="about__slider">
+            <div class="about__slides">
+              <img src="images/about-slider/_17.jpg" alt="Мастер за гончарным кругом" class="about__slide active">
+              <img src="images/about-slider/409086471e265f786530eb3d9596b15e.jpg" alt="Процесс работы с глиной" class="about__slide">
+              <img src="images/about-slider/EinyLOz7k18.jpg" alt="Готовые изделия перед обжигом" class="about__slide">
+              <img src="images/about-slider/ec10441071aa2dfc756aa09e65761718.jpg" alt="Обжиг в печи" class="about__slide">
+              <img src="images/about-slider/XXL_height.jpg" alt="Анна с готовой чашкой" class="about__slide">
+            </div>
+
+            <button class="about__prev">←</button>
+            <button class="about__next">→</button>
+
+            <div class="about__dots">
+              <span class="about__dot active" data-slide="0"></span>
+              <span class="about__dot" data-slide="1"></span>
+              <span class="about__dot" data-slide="2"></span>
+              <span class="about__dot" data-slide="3"></span>
+              <span class="about__dot" data-slide="4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title">Мастер Наталия</h2>
+
+        <div class="about__grid">
+          <!-- Текст слева -->
+          <div class="about__text">
+            <p>
+              Меня зовут Наталия, и уже больше 7 лет я не представляю свою жизнь без глины. Путь в керамику начался с поиска хобби после декрета — я записалась на вечерние занятия, чтобы отвлечься от рутины. Первая тарелка получилась неровной, но в процессе лепки я почувствовала невероятный прилив сил и радости.
+            </p>
+            <p>
+              За эти годы я выросла от новичка до мастера: изучала разные техники, пробовала ручную лепку, роспись, сложные глазури. Самое важное, что дала мне керамика — <strong>понимание уникальности</strong>. Нет двух одинаковых изделий, даже если делаешь их по одному шаблону. Глина всегда добавляет свой характер.
+            </p>
+            <p>
+              Каждый предмет проходит долгий путь: формовка, сушка, первый обжиг, роспись, второй обжиг — иногда до месяца. В это время я наполняю вещь позитивом, теплом и лёгкостью. Мои яркие чашки, пиалы и декоративные панно — это маленькие вспышки радости, которые я создаю для вас.
+            </p>
+            <p>
+              Работаю только с качественными материалами: натуральная глина, безопасные красители, пищевые глазури. Всё прочное и практичное — можно использовать ежедневно, не боясь за сохранность, и просто радоваться ручной работе в своём доме.
+            </p>
+            <p class="about__signature">
+              — Наталия, ваша создательница яркой керамики
+            </p>
+          </div>
+
+          <!-- Слайдер справа -->
+          <div class="about__slider">
+            <div class="about__slides">
+              <img src="images/about-slider/2LindUFUeq4.jpg" alt="Мастер за гончарным кругом" class="about__slide active">
+              <img src="images/about-slider/Gemini_Generated_Image_etbwwvetbwwvetbw.png" alt="Процесс работы с глиной" class="about__slide">
+              <img src="images/about-slider/i.jpg" alt="Готовые изделия перед обжигом" class="about__slide">
+              <img src="images/about-slider/0b5b87deecc85f2252680a14e2dea537.jpg" alt="Готовые изделия перед обжигом" class="about__slide">
+              <img src="images/about-slider/ceramica.jpg" alt="Готовые изделия перед обжигом" class="about__slide">
+            </div>
+
+            <button class="about__prev">←</button>
+            <button class="about__next">→</button>
+
+            <div class="about__dots">
+              <span class="about__dot active" data-slide="0"></span>
+              <span class="about__dot" data-slide="1"></span>
+              <span class="about__dot" data-slide="2"></span>
+              <span class="about__dot" data-slide="3"></span>
+              <span class="about__dot" data-slide="4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left">
+        <a href="index.html" class="logo footer__logo">
+          <span class="logo__text">Глина и Душа</span>
+        </a>
+        <p class="footer__copyright">© 2025 Все права защищены</p>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О мастере</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contacts">
+        <a href="https://t.me/lilac_n" class="footer__social">Telegram</a>
+        <a href="tel:+79991234567" class="footer__phone">+7 (999) 123-45-67</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
