@@ -1,0 +1,22 @@
+.hero {
+  padding: 120px 0 100px;
+  background-image: 
+  linear-gradient(to bottom, rgba(191, 135, 103, 0.3), rgba(191, 135, 103, 0.7)), 
+  url(../../images/bacjground.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: clamp(40px, 8vw, 80px);
+  margin-bottom: 24px;
+  color: var(--color-dark);
+}
+
+.hero__text {
+  font-size: 20px;
+  max-width: 680px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+}

@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark);
+  transition: var(--transition);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

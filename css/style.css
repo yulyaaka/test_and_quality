@@ -1,0 +1,25 @@
+@import url('base/reset.css');
+@import url('base/variables.css');
+@import url('base/typography.css');
+
+@import url('layout/container.css');
+
+@import url('components/logo.css');
+@import url('components/btn.css');
+@import url('components/header.css');
+@import url('components/burger.css');
+@import url('components/mobile-menu.css');
+@import url('components/cart-link.css');
+@import url('components/benefits.css');
+@import url('components/footer.css');
+@import url('components/about.css');
+
+@import url('pages/catalog-hero.css');
+@import url('components/product-card.css');
+@import url('pages/product.css');
+@import url('pages/cart.css');
+@import url('pages/hero.css');
+@import url('pages/checkout.css');
+@import url('pages/contacts.css');
+@import url('pages/certificates.css');
+@import url('pages/about.css');
